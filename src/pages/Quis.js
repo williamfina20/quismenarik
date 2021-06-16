@@ -94,8 +94,7 @@ const Quis = () => {
   return (
     <div className="container">
       <h2 className="text-center my-3">
-        QUiz Screen - Score:{score.correct}-{score.false} || Timer: {hours}:
-        {minutes}:{seconds}
+        Quis || Timer: {hours}:{minutes}:{seconds}
       </h2>
       <div className="card">
         <div
