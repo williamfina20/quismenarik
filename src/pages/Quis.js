@@ -138,7 +138,11 @@ const Quis = () => {
           {options.map((item, index) => (
             <div
               key={item.id}
-              style={{ display: "flex", alignItems: "center" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: 10,
+              }}
             >
               <div
                 style={{
@@ -151,7 +155,12 @@ const Quis = () => {
                 }}
                 onClick={() => selectOption(currentIndex, index)}
               />
-              <div> {item.title}</div>
+              <div
+                onClick={() => selectOption(currentIndex, index)}
+                style={{ cursor: "pointer" }}
+              >
+                {item.title}
+              </div>
             </div>
           ))}
         </div>
