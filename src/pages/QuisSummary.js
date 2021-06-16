@@ -17,7 +17,7 @@ const QuisSummary = ({ location }) => {
           <h2>Jawaban Quis</h2>
           <h4>
             Score : {location.state.score.correct} dari{" "}
-            {location.state.score.false}
+            {location.state.quiz.length}
           </h4>
         </div>
         {location.state.quiz.map((item, index) => (
